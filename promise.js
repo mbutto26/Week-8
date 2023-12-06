@@ -25,7 +25,7 @@ const randomnNumberPromise = new Promise((res, rej) => {
 });
 randomnNumberPromise
   .then((value) => {
-    console.log(`Success!`, value);
+    console.log(`Success`, value);
   })
   .catch((err, value) => {
     console.log(`Fail`, value);

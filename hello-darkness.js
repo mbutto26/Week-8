@@ -1,10 +1,10 @@
 let color = 255;
 
-let darkColor = setInterval(() => {
+let colorChange = setInterval(() => {
   if (color > 0) {
     color--;
     document.body.style.backgroundColor = `rgb(${color}, ${color}, ${color})`;
   } else {
-    clearInterval(darkColor);
+    clearInterval(colorChange);
   }
 }, 300);
