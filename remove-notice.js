@@ -1,4 +1,4 @@
-const maintenanceNotice = document.getElementById("maintennce-notice");
+const maintenanceNotice = document.getElementByClass("container");
 
 const removeNotice = function () {
   maintenanceNotice.classList.add("d-none");
