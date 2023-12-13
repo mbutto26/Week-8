@@ -27,7 +27,7 @@ randomnNumberPromise
   .then((value) => {
     console.log(`Success`, value);
   })
-  .catch((err, value) => {
+  .catch((value) => {
     console.log(`Fail`, value);
   })
   .finally(() => {
