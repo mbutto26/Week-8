@@ -1,7 +1,6 @@
-const maintenanceNotice = document.getElementByClass("container");
+const maintenanceNotice = document.getElementById("maintenance-notice");
 
 const removeNotice = function () {
-  maintenanceNotice.classList.add("d-none");
+  maintenanceNotice.classList.add("invisible");
 };
 setTimeout(removeNotice, 5000);
-console.log(removeNotice);
