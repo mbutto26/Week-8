@@ -1,13 +1,12 @@
 let rgb = 0;
-const animate = function () {
-  rgb++;
+const animate = () => {
   if (rgb < 255) {
-    const color = `rgb(${rgb}, ${rgb} ${rgb})`;
-    document.body.style.backgroundColor.transform = color;
-    requestAnimationFrame(animate);
+    rgb++;
+    document.body.style.backgroundColor = `rgb(${rgb}, ${rgb}, ${rgb})`;
   }
+  requestAnimationFrame(animate);
 };
-requestAnimationFrame(animate);
+requestAnimationFrame(animate, 3000);
 
 /*let x = 0;
 const animate = function () {
