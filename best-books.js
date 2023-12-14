@@ -16,7 +16,7 @@ function booksEl() {
     .then((response) => response.json())
     .then((data) => {
       const bookOne = data.results.lists[0].books[0];
-      const bookOneEl = [bookOne.title, bookOne.author, bookOne.description];
+      const bookOneEl = [(bookOne.title, bookOne.author, bookOne.description)];
       document.querySelector(".book-one").innerHTML = bookOneEl;
 
       const bookTwo = data.results.lists[0].books[1];
